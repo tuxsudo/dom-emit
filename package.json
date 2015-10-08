@@ -1,10 +1,10 @@
 {
   "name": "dom-emit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small micro-library in es6 to make custom event emitting easier",
-  "main": "index.js",
+  "main": "dom-emit.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify test/test.js -t babelify | uglifyjs > test/test.dist.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/tuxsudo/dom-emit/issues"
   },
-  "homepage": "https://github.com/tuxsudo/dom-emit#readme"
+  "homepage": "https://github.com/tuxsudo/dom-emit#readme",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "uglifyjs": "^2.4.10"
+  },
+  "dependencies": {
+    "polyfill-custom-event": "^1.0.0"
+  }
 }
