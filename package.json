@@ -31,5 +31,10 @@
   },
   "dependencies": {
     "polyfill-custom-event": "^1.0.0"
-  }
+  },
+  "browserify": {
+  	"transform": [
+    	"babelify"
+  	]
+	}
 }
