@@ -1,6 +1,6 @@
 {
   "name": "dom-emit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A small micro-library in es6 to make custom event emitting easier",
   "main": "dom-emit.js",
   "jsnext:main": "dom-emit.js",
