@@ -1,9 +1,9 @@
 {
   "name": "dom-emit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A small micro-library in es6 to make custom event emitting easier",
-  "main": "dom-emit.js",
-  "jsnext:main": "dom-emit.js",
+  "main": "index.js",
+  "jsnext:main": "index.js",
   "scripts": {
     "build": "browserify test/test.js -t babelify | uglifyjs > test/test.dist.js"
   },
